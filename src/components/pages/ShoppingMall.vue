@@ -59,9 +59,9 @@
             <div class="hot-goods">
             <!--这里需要一个list组件-->
                 <van-list>
-                    <van-row gutter="20">
+                    <van-row >
                         <van-col span="12" v-for="(item , index) in hotGoods" :key="index">
-                                <goods-info :goodsImage="item.image" :goodsName="item.name" :goodsPrice="item.price">
+                                <goods-info :goodsImage="item.image" :goodsName="item.name" :goodsPrice="item.price" :goodsId="item.goodsId">
 
                                 </goods-info>
                         </van-col>
